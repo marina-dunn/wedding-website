@@ -9,6 +9,9 @@ export const ThemeToggle = () => {
 
     useEffect(() => setMounted(true), []);
 
+    useEffect(() => {
+        console.log("Current theme:", theme);
+    }, [theme]);
     if (!mounted) return null;
 
     return (
