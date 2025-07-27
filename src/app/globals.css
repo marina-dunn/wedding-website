@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 html,
 body {
@@ -7,4 +8,9 @@ body {
 
 body {
     min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
