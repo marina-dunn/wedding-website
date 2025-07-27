@@ -9,7 +9,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Masonry from "react-masonry-css";
 
-const images = Array.from({ length: 40 }, (_, i) => {
+const images = Array.from({ length: 95 }, (_, i) => {
     const num = String(i + 1).padStart(2, "0");
     return {
         src: `/gallery/photo${num}.webp`,
@@ -27,8 +27,8 @@ export default function WeddingGallery() {
 
     return (
         <section className="py-12 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-white via-[#fdf6f9] to-white">
-            <h2 className="text-center text-3xl font-semibold text-[#8a4b75] mb-6 tracking-wide">
-                Wedding Memories
+            <h2 className="text-center text-3xl font-semibold text-red-blood dark:text-red-scarlet mb-6 tracking-wide">
+                Pictures that Marina liked and made her laugh so here they are to share with you
             </h2>
             <Masonry
                 breakpointCols={breakpointColumnsObj}
